@@ -12,7 +12,7 @@ public class JobDao {
     // Database connection details
      String jdbcURL = "jdbc:mysql://localhost:3306/jobportal";
      String jdbcUsername = "root";
-     String jdbcPassword = "@1Sivaiah";// Add this as the first method in your JobDao class
+     String jdbcPassword = "password";// Add this as the first method in your JobDao class
      private Connection getConnection() throws Exception {
     	    Class.forName("com.mysql.cj.jdbc.Driver");
     	    return DriverManager.getConnection(
