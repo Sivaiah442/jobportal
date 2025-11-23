@@ -9,7 +9,7 @@ import java.sql.ResultSet;
 public class UserDao {
 	String url="jdbc:mysql://localhost:3306/jobportal";
 	String User="root";
-	String Password="@1Sivaiah";
+	String Password="password";
 	public boolean saveUser(String username, String email, String password) {
         boolean result = false;
         try {
