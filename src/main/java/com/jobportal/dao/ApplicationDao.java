@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 public class ApplicationDao {
     private String jdbcURL = "jdbc:mysql://localhost:3306/jobportal";
     private String jdbcUsername = "root";
-    private String jdbcPassword = "@1Sivaiah";
+    private String jdbcPassword = "password";
 
     public boolean applyForJob(int userId, int jobId) {
         boolean result = false;
