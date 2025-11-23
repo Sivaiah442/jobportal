@@ -1,0 +1,43 @@
+# Compiled Java class files
+*.class
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Maven / Gradle build directories
+/target/
+/build/
+
+# Eclipse files
+.project
+.classpath
+.settings/
+/bin/
+/tmp/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.ipr
+
+# Environment variables or config files containing secrets
+.env
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Node modules (if any frontend includes Node.js)
+/node_modules/
+
+# VS Code settings (if you use VS Code)
+.vscode/

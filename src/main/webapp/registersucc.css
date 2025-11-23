@@ -1,0 +1,114 @@
+/* General body styling for an attractive gradient background */
+body {
+    font-family: 'Poppins', sans-serif; /* Modern font choice */
+    background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Beautiful blue gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #333; /* Default text color */
+    text-align: center; /* Center align all text within body */
+}
+
+/* Container for the success message */
+.form-container { /* Reusing the class name from your HTML */
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white card */
+    padding: 50px; /* More padding for a spacious feel */
+    border-radius: 20px; /* Consistent rounded corners */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Deeper, more diffuse shadow */
+    width: 100%;
+    max-width: 500px; /* A bit wider for the message */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items vertically in the column */
+    gap: 25px; /* Space between elements */
+    backdrop-filter: blur(5px); /* Subtle blur effect */
+    animation: fadeInScale 0.8s ease-out; /* Fade-in and slight scale animation */
+    position: relative; /* For potential icons or additional elements */
+    overflow: hidden; /* Ensures nothing spills out of rounded corners */
+}
+
+/* Keyframe animation for fade-in and scale */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Success heading styling */
+.form-container h2 {
+    color: #28a745; /* A strong, reassuring green for success */
+    margin-bottom: 15px;
+    font-size: 2.8em; /* Very prominent success message */
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Paragraph styling for the success message */
+.form-container p {
+    color: #555555;
+    font-size: 1.2em; /* Readable text size */
+    line-height: 1.6;
+    margin-bottom: 30px; /* Space before the button */
+    max-width: 80%; /* Constrain text width for better readability */
+}
+
+/* Styling for the Login button */
+.form-container button[type="submit"] {
+    width: 80%; /* Button takes up more width */
+    padding: 18px;
+    background: linear-gradient(90deg, #28a745, #218838); /* Green gradient for success button */
+    color: white;
+    border: none;
+    border-radius: 10px; /* Consistent rounded button */
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(40, 167, 69, 0.4); /* Green shadow */
+    letter-spacing: 0.5px;
+}
+
+.form-container button[type="submit"]:hover {
+    background: linear-gradient(90deg, #218838, #28a745); /* Reverse gradient on hover */
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(40, 167, 69, 0.5);
+}
+
+.form-container button[type="submit"]:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 30px;
+        margin: 0 15px;
+        max-width: 90%;
+    }
+
+    .form-container h2 {
+        font-size: 2.2em;
+    }
+
+    .form-container p {
+        font-size: 1.1em;
+        max-width: 95%;
+    }
+
+    .form-container button {
+        width: 90%;
+        padding: 16px;
+        font-size: 1.1em;
+    }
+}

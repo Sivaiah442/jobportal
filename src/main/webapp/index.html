@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Job Portal - Home</title>
+<link rel="icon" href="💻">
+<style>
+    /* Basic Reset */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: #fff;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .container {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 40px 60px;
+        max-width: 600px;
+        text-align: center;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    p.welcome-quote {
+        font-size: 1.3rem;
+        margin-bottom: 40px;
+        font-style: italic;
+        color: #e0e0e0;
+    }
+
+    .btn-group a {
+        background: #826af9;
+        color: white;
+        padding: 12px 36px;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(130, 106, 249, 0.6);
+        transition: background 0.3s ease, transform 0.3s ease;
+        display: inline-block;
+        font-size: 1.1rem;
+    }
+
+    .btn-group a:hover {
+        background: #5b3fc9;
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(91, 63, 201, 0.8);
+    }
+
+    @media (max-width: 480px) {
+        .container {
+            padding: 30px 20px;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        .btn-group a {
+            padding: 10px 24px;
+            margin: 8px 10px;
+            font-size: 1rem;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Your Dream Job Portal</h1>
+        <p class="welcome-quote">"Unlock your potential, one opportunity at a time."</p>
+
+        <div class="btn-group">
+            <a href="login.jsp">Login</a>
+            <a href="register.jsp">Sign Up</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body {
+    background: linear-gradient(120deg, #b3caff 0%, #e9f0fa 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Card container */
+.jobpost-container {
+    background: #fff;
+    border-radius: 17px;
+    box-shadow: 0 8px 40px rgba(30,40,90,0.13);
+    max-width: 410px;
+    margin: 22px auto 0 auto;
+    padding: 46px 40px 34px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    color: #243c6c;
+    margin-bottom: 32px;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+input[type="text"], textarea {
+    padding: 13px 14px;
+    border-radius: 8px;
+    border: 1.4px solid #c9daf7;
+    font-size: 1.08em;
+    background: #f6faff;
+    color: #1b2d4f;
+    transition: border .19s;
+    width: 100%;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border: 1.6px solid #4677be;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 70px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Post Job Button */
+.submit-btn {
+    margin-top: 10px;
+    background: linear-gradient(90deg,#398aed,#4b5fc8);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.13em;
+    padding: 13px 0;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 0 2px 16px rgba(44,67,126,0.09);
+    cursor: pointer;
+    transition: background .19s, box-shadow .15s;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(90deg,#264581,#3873c5);
+    box-shadow: 0 4px 18px rgba(54,77,164,0.15);
+}
+
+/* Home Button */
+.home-btn {
+  display: inline-block;
+  padding: 11px 28px;
+  border-radius: 7px;
+  background: linear-gradient(90deg, #3873c5, #264581);
+  color: #fff !important;
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none !important;
+  border: none;
+  margin-bottom: 4px;
+  box-shadow: 0 2px 12px rgba(30,40,90,0.07);
+  transition: background .22s, box-shadow .14s;
+  cursor: pointer;
+}
+.home-btn:hover {
+  background: linear-gradient(90deg,#29447b,#4170c1);
+  box-shadow: 0 4px 18px rgba(40,60,90,0.12);
+}

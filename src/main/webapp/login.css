@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #6a89cc 0%, #b8e994 100%);
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.form-container {
+    background: #fff;
+    padding: 36px 28px 28px 28px;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(23, 58, 212, 0.09), 0 1.5px 4px 0 rgba(0,0,0,0.03);
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fade-in 0.6s;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(40px);}
+    to { opacity: 1; transform: none;}
+}
+
+.form-container h2 {
+    margin-bottom: 22px;
+    color: #273c75;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    width: 95%;
+    padding: 12px 12px;
+    margin: 7px 0;
+    border: 1px solid #d1d8e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #f6f6f6;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-container input:focus {
+    border-color: #6a89cc;
+    background: #eef6fb;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 6px;
+    background: #6a89cc;
+    color: #fff;
+    font-size: 1.07rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(106,137,204,0.12);
+    transition: background 0.3s;
+}
+
+.form-container button:hover {
+    background: #3867d6;
+}
+
+.form-container p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.form-container a {
+    color: #5f99f7;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.form-container a:hover {
+    color: #3867d6;
+    text-decoration: underline;
+}
