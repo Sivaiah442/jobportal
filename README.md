@@ -34,20 +34,20 @@ text
 JobPortal/
 │
 ├── src/
-│   ├── com.jobportal.dao/        (DAO classes for database operations)\n
-│   ├── com.jobportal.servlets/    (Servlet classes for handling requests)\n
-│   └── com.jobportal.model/       (Model classes for data representation)\n
+│   ├── com.jobportal.dao/        (DAO classes for database operations)
+│   ├── com.jobportal.servlets/    (Servlet classes for handling requests)
+│   └── com.jobportal.model/       (Model classes for data representation)
 │
 ├── WebContent/
 │   ├── WEB-INF/
-│   │   └── web.xml              (Servlet configuration)\n
-│   ├── css/                     (CSS files)\n
-│   ├── js/                      (JavaScript files)\n
-│   ├── images/                  (Image assets)\n
-│   ├── jsp/                     (JSP pages for UI)\n
-│   └── index.jsp                (Home page)\n
+│   │   └── web.xml              (Servlet configuration)
+│   ├── css/                     (CSS files)
+│   ├── js/                      (JavaScript files)
+│   ├── images/                  (Image assets)
+│   ├── jsp/                     (JSP pages for UI)
+│   └── index.jsp                (Home page)
 │
-└── README.md                    (This file)\n
+└── README.md                    (This file)
 How to Run
 Start the Tomcat server from Eclipse.
 
